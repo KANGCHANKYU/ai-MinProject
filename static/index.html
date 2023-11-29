@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 스타일링은 여기에 추가하세요 */
+        #video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh; /* 화면의 80% 높이로 조정하세요 */
+            background-color: #f0f0f0; /* 배경색은 원하는 색상으로 변경하세요 */
+        }
+        .webcam-strea {
+            max-width: 100%; /* 비디오가 너무 커지지 않도록 최대 너비 지정 */
+            max-height: 100%; /* 비디오가 너무 커지지 않도록 최대 높이 지정 */
+            border: 2px solid black; /* 원하는 스타일링을 위한 경계선 추가 */
+        }
+    </style>
+</head>
+<body>
+    {% block content %}
+            
+    {% endblock content %}
+    <div id="video-container">
+    </div>
+
+    <dev id="index-box">
+        <button id="btn">웹캠 활성화</button>
+    </dev>
+
+    <script src="/resources/js/webcan.js"></script>
+</body>
+</html>
